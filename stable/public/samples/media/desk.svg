@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>机の上のノート（架空サンプル画像）</title>
+<rect width="1200" height="800" fill="#c9b79c"/>
+<rect x="180" y="140" width="520" height="560" rx="14" fill="#fbfaf6" transform="rotate(-4 440 420)"/>
+<g stroke="#9aa3b2" stroke-width="6" stroke-linecap="round" transform="rotate(-4 440 420)">
+<line x1="240" y1="240" x2="640" y2="240"/><line x1="240" y1="300" x2="640" y2="300"/><line x1="240" y1="360" x2="600" y2="360"/><line x1="240" y1="420" x2="640" y2="420"/><line x1="240" y1="480" x2="520" y2="480"/></g>
+<rect x="760" y="180" width="200" height="200" fill="#f7d65a" transform="rotate(6 860 280)"/>
+<rect x="800" y="430" width="200" height="200" fill="#8fd3c1" transform="rotate(-5 900 530)"/>
+<rect x="120" y="610" width="460" height="22" rx="11" fill="#2c3e50" transform="rotate(-18 350 620)"/>
+<g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="36" fill="#ffffff" fill-opacity=".85">
+<rect x="36" y="704" rx="6" width="336" height="64" fill="#000" fill-opacity=".35"/>
+<text x="60" y="748">架空サンプル画像</text></g>
+</svg>

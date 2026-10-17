@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<title>CLIの出力（架空サンプル画像）</title>
+<rect width="1200" height="750" rx="18" fill="#1e1f24"/><circle cx="50" cy="40" r="10" fill="#ff5f57"/><circle cx="85" cy="40" r="10" fill="#febc2e"/><circle cx="120" cy="40" r="10" fill="#28c840"/>
+<g fill="#7ee787"><rect x="60" y="110" width="40" height="22" rx="4"/></g><g fill="#c9d1d9" fill-opacity=".8"><rect x="120" y="110" width="520" height="22" rx="4"/><rect x="60" y="170" width="760" height="22" rx="4"/><rect x="60" y="230" width="640" height="22" rx="4"/></g>
+<g fill="#ff7b72"><rect x="60" y="300" width="300" height="22" rx="4"/></g><g fill="#c9d1d9" fill-opacity=".6"><rect x="60" y="360" width="880" height="22" rx="4"/><rect x="60" y="420" width="700" height="22" rx="4"/></g>
+<g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="33" fill="#ffffff" fill-opacity=".85">
+<rect x="36" y="660" rx="6" width="336" height="60" fill="#000" fill-opacity=".35"/>
+<text x="60" y="701">架空サンプル画像</text></g>
+</svg>

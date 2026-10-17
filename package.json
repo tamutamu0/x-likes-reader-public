@@ -1,0 +1,37 @@
+{
+  "name": "margin-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/mcp",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @margin/api",
+    "dev:web": "npm --prefix stable start",
+    "mcp:start": "node apps/mcp/src/server.mjs",
+    "mcp:test": "npm run test -w @margin/mcp",
+    "check": "npm run typecheck -w @margin/api && npm run check -w @margin/contracts",
+    "test": "npm run test -w @margin/api && npm --prefix stable test && npm run mcp:test && npm run test:demo",
+    "test:ios": "swift run --package-path apps/ios/Core --scratch-path .cache/swift-core MarginCoreChecks",
+    "smoke:api": "node --import tsx scripts/smoke-api.mts",
+    "smoke:activity": "node --import tsx scripts/smoke-activity.mts",
+    "smoke:ios": "swift run --package-path apps/ios/Core --scratch-path .cache/swift-core MarginSmoke",
+    "ios:prepare": "node scripts/prepare-ios.mjs && xcodegen generate --spec apps/ios/project.yml",
+    "ios:build:preview": "node scripts/prepare-ios.mjs && swift build --package-path apps/ios --scratch-path .cache/swift-ui",
+    "ios:package:preview": "npm run ios:build:preview && node scripts/package-preview.mjs",
+    "contracts:generate": "npm run generate -w @margin/contracts",
+    "smoke:x-control": "node --import tsx scripts/smoke-x-control.mts",
+    "smoke:security": "node --import tsx scripts/smoke-security.mts",
+    "smoke:preview": "node --import tsx scripts/smoke-preview.mts",
+    "demo": "node scripts/demo.mjs",
+    "docs:screenshots": "node scripts/readme-screenshots.mjs",
+    "test:demo": "node --test scripts/demo.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

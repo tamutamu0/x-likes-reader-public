@@ -1,0 +1,30 @@
+{
+  "name": "@margin/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "WRANGLER_SEND_METRICS=false wrangler dev --env local --ip 127.0.0.1 --port 8787",
+    "db:migrate:local": "WRANGLER_SEND_METRICS=false wrangler d1 migrations apply margin --local --env local",
+    "db:seed:local": "WRANGLER_SEND_METRICS=false wrangler d1 execute margin --local --env local --file ../../packages/contracts/fixtures/seed.sql",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "node ../../scripts/build-auth-client.mjs && WRANGLER_SEND_METRICS=false wrangler deploy --env=\"\" --dry-run --outdir dist",
+    "build:core": "WRANGLER_SEND_METRICS=false wrangler deploy --config wrangler.core.jsonc --dry-run --outdir dist/core",
+    "build:preview": "WRANGLER_SEND_METRICS=false wrangler deploy --config wrangler.preview.jsonc --dry-run --outdir dist/preview",
+    "build:webhook": "WRANGLER_SEND_METRICS=false wrangler deploy --config wrangler.webhook.jsonc --dry-run --outdir dist/webhook"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "14.0.0",
+    "@simplewebauthn/server": "14.0.3",
+    "hono": "4.13.13"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261011.1",
+    "@types/node": "latest",
+    "ajv": "latest",
+    "ajv-formats": "latest",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "wrangler": "4.149.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format": "margin-backup",
+  "version": 1,
+  "exportedAt": "2026-10-10T00:00:00Z",
+  "count": 2,
+  "items": [
+    { "src": { "postId": "8100000000000000001", "url": "https://x.com/fic_gamma/status/8100000000000000001", "author": { "name": "架空ガンマ", "handle": "fic_gamma" }, "text": "バックアップの架空データ", "postedAt": "2026-09-05T00:00:00Z", "links": [] }, "user": { "state": "kept", "read": true, "tags": ["記録"], "memo": "架空のメモ", "genre": "習慣・学び", "editedAt": "2026-09-06T00:00:00Z" }, "meta": { "origin": "sample" } },
+    { "src": { "postId": "8100000000000000002", "author": { "name": "架空デルタ", "handle": "fic_delta" }, "text": "壊れた user を持つ", "postedAt": "2026-09-05T00:00:00Z" }, "user": { "state": "exploded", "tags": "not-an-array", "laterUntil": "never" }, "meta": { "origin": "root" } }
+  ]
+}

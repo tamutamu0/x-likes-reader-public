@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<title>LPの構成（架空サンプル画像）</title>
+<rect width="800" height="1000" fill="#fff"/>
+<rect x="0" y="0" width="800" height="360" fill="#ffe7d6"/><rect x="80" y="120" width="420" height="40" rx="8" fill="#e46b2e"/><rect x="80" y="190" width="300" height="24" rx="8" fill="#333" fill-opacity=".5"/>
+<rect x="60" y="420" width="680" height="12" fill="#f04a4a" fill-opacity=".8"/>
+<g fill="#ddd"><rect x="80" y="480" width="200" height="140" rx="10"/><rect x="300" y="480" width="200" height="140" rx="10"/><rect x="520" y="480" width="200" height="140" rx="10"/></g>
+<g fill="#333" fill-opacity=".35"><rect x="80" y="680" width="640" height="18" rx="9"/><rect x="80" y="720" width="560" height="18" rx="9"/><rect x="80" y="760" width="600" height="18" rx="9"/></g>
+<g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="45" fill="#ffffff" fill-opacity=".85">
+<rect x="24" y="880" rx="6" width="224" height="80" fill="#000" fill-opacity=".35"/>
+<text x="40" y="935">架空サンプル画像</text></g>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "name": "@margin/contracts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "openapi-typescript openapi.json -o generated.ts",
+    "check": "openapi-typescript openapi.json -o generated.ts --check"
+  },
+  "devDependencies": { "openapi-typescript": "latest" }
+}

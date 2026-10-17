@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+<title>動画のサムネイル（架空サンプル画像）</title>
+<rect width="1280" height="720" fill="#24324a"/><circle cx="420" cy="360" r="200" fill="#3b5b8a"/><rect x="700" y="200" width="380" height="320" rx="24" fill="#4f79b5"/>
+<g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="32" fill="#ffffff" fill-opacity=".85">
+<rect x="38" y="633" rx="6" width="358" height="57" fill="#000" fill-opacity=".35"/>
+<text x="64" y="673">架空サンプル画像</text></g>
+</svg>

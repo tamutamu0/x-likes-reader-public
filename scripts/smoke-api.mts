@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { ReaderClient, APIError } from '../packages/contracts/client';
+const client = new ReaderClient('http://127.0.0.1:8787', { localDevelopment: true });
+const page = await client.items();
+assert.ok(page.items.length > 0 && page.items.every(it => it.metadata.fictional));
+const item = page.items[0];
+const updated = await client.patch(item.id, item.revision, { tags: ['Web・iOS共通確認'] });
+assert.deepEqual(updated.user.tags, ['Web・iOS共通確認']);
+await assert.rejects(client.patch(item.id, item.revision, { memo: '上書きしてはいけない' }), (e: unknown) => e instanceof APIError && e.status === 409);
+console.log('PASS: Web TypeScript client → Workers/D1; fictional data, edit, conflict');

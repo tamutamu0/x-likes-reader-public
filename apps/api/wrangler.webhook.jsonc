@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "margin-x-events",
+  "main": "src/x-webhook.ts",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": { "X_WEBHOOK_ENABLED": "true" },
+  "services": [{ "binding": "X_INBOX_PROCESSOR", "service": "margin-core", "entrypoint": "InboxProcessor" }],
+  "observability": { "enabled": false }
+}

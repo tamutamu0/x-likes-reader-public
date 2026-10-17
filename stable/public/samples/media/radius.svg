@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<title>角丸の入れ子（架空サンプル画像）</title>
+<rect width="1200" height="800" fill="#eef1f6"/>
+<rect x="250" y="160" width="700" height="480" rx="48" fill="#ffffff" stroke="#c7cfdb" stroke-width="4"/>
+<rect x="300" y="210" width="600" height="380" rx="24" fill="#e4ecff"/>
+<rect x="360" y="460" width="220" height="80" rx="12" fill="#1d9bf0"/>
+<rect x="610" y="460" width="220" height="80" rx="12" fill="#ffffff" stroke="#1d9bf0" stroke-width="4"/>
+<g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="36" fill="#ffffff" fill-opacity=".85">
+<rect x="36" y="704" rx="6" width="336" height="64" fill="#000" fill-opacity=".35"/>
+<text x="60" y="748">架空サンプル画像</text></g>
+</svg>

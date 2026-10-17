@@ -1,0 +1,21 @@
+import type { components } from '../../../packages/contracts/generated';
+import type { AccessBindings } from './access';
+import type { XBindings } from './x-runtime';
+export type Item = components['schemas']['Item'];
+export type PatchRequest = components['schemas']['PatchRequest'];
+export type ChangePage = components['schemas']['ChangePage'];
+export type Bindings = AccessBindings & XBindings & {
+  DB?: D1Database;
+  APP_ENV?: string;
+  X_SYNC_ENABLED?: string;
+  X_INBOX_PROCESSING_ENABLED?: string;
+  ASSETS?: Fetcher;
+  AUTH_DB?: D1Database;
+  AUTH_ORIGIN?: string;
+  AUTH_MODE?: string;
+  CORE?: Fetcher;
+  PREVIEW?: Fetcher;
+  AUTH_RATE_LIMITER?: { limit(options:{key:string}):Promise<{success:boolean}> };
+  MCP_RATE_LIMITER?: { limit(options:{key:string}):Promise<{success:boolean}> };
+  X_OWNER_ID?: string;
+};

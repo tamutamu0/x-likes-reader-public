@@ -1,0 +1,25 @@
+{
+  "source": "Built-in fictional samples in stable/public/js/sample.js",
+  "realAccountData": false,
+  "externalRequests": 0,
+  "captures": [
+    {
+      "file": "docs/images/desktop-library.png",
+      "width": 1440,
+      "height": 1080,
+      "fictional": true
+    },
+    {
+      "file": "docs/images/desktop-reading.png",
+      "width": 1440,
+      "height": 1000,
+      "fictional": true
+    },
+    {
+      "file": "docs/images/mobile-reading.png",
+      "width": 390,
+      "height": 844,
+      "fictional": true
+    }
+  ]
+}

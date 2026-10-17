@@ -1,0 +1,9 @@
+{
+  "accountId": "00000000000000000000000000000000",
+  "databaseId": "00000000-0000-0000-0000-000000000000",
+  "authDatabaseId": "00000000-0000-0000-0000-000000000000",
+  "origin": "https://reader.example.org",
+  "webhookOrigin": "https://events.example.org",
+  "creditStopAt": "2000-01-01T00:00:00Z",
+  "syncEnabled": false
+}

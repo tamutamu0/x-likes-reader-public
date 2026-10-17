@@ -1,0 +1,31 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "margin-api",
+  "main": "src/gateway.ts",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": { "APP_ENV": "production", "AUTH_MODE": "link", "AUTH_ORIGIN": "https://reader.example.org" },
+  "assets": { "directory": "../../stable/public", "binding": "ASSETS", "run_worker_first": true },
+  "triggers": { "crons": [] },
+  "d1_databases": [{ "binding": "AUTH_DB", "database_name": "margin-auth", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "auth-migrations" }],
+  "services": [{ "binding": "CORE", "service": "margin-core" }],
+  "ratelimits": [
+    { "name": "AUTH_RATE_LIMITER", "namespace_id": "1001", "simple": { "limit": 20, "period": 60 } },
+    { "name": "MCP_RATE_LIMITER", "namespace_id": "1002", "simple": { "limit": 60, "period": 60 } }
+  ],
+  "observability": { "enabled": false },
+  "env": {
+    "local": {
+      "name": "margin-api-local",
+      "main": "src/worker.ts",
+      "vars": { "APP_ENV": "local", "X_SYNC_ENABLED": "false", "X_INBOX_PROCESSING_ENABLED": "false" },
+      "d1_databases": [{
+        "binding": "DB",
+        "database_name": "margin",
+        "database_id": "00000000-0000-0000-0000-000000000000",
+        "migrations_dir": "migrations"
+      }]
+    }
+  }
+}
